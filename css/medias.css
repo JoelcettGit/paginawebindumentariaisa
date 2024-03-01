@@ -1,0 +1,125 @@
+
+@font-face {
+    font-family: norwester;
+    src: url(/fonts/norwester.regular.otf);
+}
+@font-face {
+    font-family: proximanova;
+    src: url(/fonts/ProximaNovaFont.otf);
+}
+@media screen and (max-width: 1212px) {
+    .sec1,
+    .sec2,
+    .sec3 {
+        /* overflow-x: scroll; */
+        scroll-margin: 0;
+        scroll-padding: 0;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width: 1095px) {
+    .footer {
+        justify-content: space-around;
+    }
+    .f2 {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .linea-titulo {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 996px) {
+    #nav {
+        width: 80%;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    #footer {
+        height: 800px;
+        align-items: flex-start;
+    }
+    .footer {
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        /* ç   justify-content: space-between; */
+    }
+    .f1,
+    .f2-celu,
+    .f3 {
+        width: 100%;
+    }
+    .f1{
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .f3 {
+        height: 50%;
+    }
+    .f2-celu {
+        height: 30%;
+    }
+    .f2 {
+        display: none;
+    }
+    .f2-celu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .logo-div {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width: 592px) {
+    .header{
+        flex-direction: column;
+        max-height: 200px;
+        height: 160px;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    .logo-div {
+        justify-content: center;
+        height: 50%;
+    }
+    #nav {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+    }
+    .ul-nav {
+        width: 90%;
+    }
+    .li-nav a {
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    .titulo {
+        flex-direction: column;
+    }
+    .oasish2 {
+        display: none;
+    }
+    .linea-titulo {
+        width: 30%;
+    }
+}

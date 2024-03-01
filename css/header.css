@@ -1,0 +1,133 @@
+
+@font-face {
+    font-family: norwester;
+    src: url(/fonts/norwester.regular.otf);
+}
+@font-face {
+    font-family: proximanova;
+    src: url(/fonts/ProximaNovaFont.otf);
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* ||| CONTENEDOR PRINCIPAL HEADER ||| */
+#header {
+    /* max-height: 75px; */
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    opacity: .9;
+}
+.header {
+    background-color: #efefef;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+/* ||| TODO SOBRE EL LOGO ||| */
+.logo-div {
+    width: 34%;
+    height: 90%;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    border: 7px solid #0c0c0c;
+    color: #0c0c0c;
+    font-size: 2.5em;
+    position: relative;
+}
+
+.logo-span {
+    position: absolute;
+    height: 4px;
+    width: 7%;
+
+    border-top: 1.2px solid #0c0c0c;
+    border-bottom: 1.2px solid #0c0c0c;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.logo-span2 {
+    width: 2%;
+    left: 7%;
+}
+.logo-span3 {
+    left: 8%;
+    width: 11%;
+}
+.logo-span4 {
+    top: 24%;
+    left: 17%;
+    width: 12%;
+}
+.logo-span5{
+    left: 41%;
+    width: 20%;
+    top: 7%;
+}
+.logo-span6 {
+    right: 15%;
+    width: 20%;
+    top: 31.25%;
+}
+.logo-span7 {
+    right: 0;
+    top: 7%;
+}
+.fn {
+    font-family: norwester;
+}
+
+/* || FIN DEL LOGO || */
+
+/* || TODO SOBRE EL NAV || */
+#nav {
+    width: 40%;
+    height: 80%;
+}
+.ul-nav {
+    background-color: #fff;
+    height: 100%;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 2px solid #efefef;
+}
+.li-nav {
+    display: flex;
+    justify-content: center;
+    width: 33.3%;
+}
+
+.li-nav a {
+    color: #0c0c0c;
+    font-size: 1.3em;
+    font-family: 'proximanova';
+    transition: all .5s;
+    border-bottom: 0px solid #efefef;
+}
+.li-nav a:hover {
+    color: #bfbfbf;
+    transition: all .3s;
+}
+
+/* ||FIN DEL NAV|| */
