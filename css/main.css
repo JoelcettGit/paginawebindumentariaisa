@@ -7,6 +7,63 @@
     src: url(/fonts/ProximaNovaFont.otf);
 }
 
+
+.wrapper-content .loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fafafa;
+    z-index: 300;
+} 
+
+.wrapper-content .loader .container-img-loader {
+    width: 200px;
+}
+.wrapper-content .loader .container-img-loader img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.wrapper-content .loader .saludo-loader .text-saludo-loader {
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: 'proximanova';
+    color: #008000;
+}
+.wrapper-content .loader .text-bouncing {
+    font-family: 'proximanova';
+    display: flex;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-top: -20px;
+}
+.wrapper-content .loader .text-bouncing .text-b {
+    padding-left: 10px;
+    animation: bouncing 1.5s infinite;
+    animation-delay: calc(.1s * var( --i));
+    color: #ffff00;
+}
+.wrapper-content .loader .text-bouncing .text-b:first-child {
+    padding-left: 0;
+}
+
+@keyframes bouncing {
+    0%, 40%, 100% {
+        transform: translateY(0);
+        
+    }
+    60% {
+        transform: translateY(-10px);
+        color: #008000;
+    }
+}
+
 /* ||SECCIONES Y CUERPO|| */
 
 .titulo {
