@@ -1,36 +1,19 @@
-// const abrir = document.querySelector(".click-aqui")
-// const cerrar = document.querySelector(".cerrar")
-// const mascota_dialogo = document.querySelector(".dialogo-mascota")
-// const punta_dialogo = document.querySelector(".punta-dialogo")
 
-// const transicionar = (abrir, cerrar, mascota_dialogom, punta_dialogo)
+window.addEventListener('load', ( )=> {
+  document.querySelector('.loader').style.display = 'none';
+})
 
-// function chatear() {
-//     abrir.style.opacity = "0";
-//     cerrar.style.opacity = "1";
-//     cerrar.style.cursor = "pointer";
-//     mascota_dialogo.style.opacity = "1";
-//     punta_dialogo.style.opacity = "1";
-// }
-// function cerrarChat() {
-//     abrir.style.opacity = "1";
-//     cerrar.style.opacity= "0";
-//     cerrar.style.cursor = "default";
-//     mascota_dialogo.style.opacity = "0";
-//     punta_dialogo.style.opacity = "0";
-
-// }
 const abrir = document.querySelector(".click-aqui");
 const cerrar = document.querySelector(".cerrar");
 const mascota_dialogo = document.querySelector(".dialogo-mascota");
 const punta_dialogo = document.querySelector(".punta-dialogo");
 const mensajes = [
   "¡No olvides seguirnos en nuestras redes!",
-  "¿Has visto nuestras últimas ofertas en moda?",
+  "¡Somos los mejores!",
   "¡No te pierdas nuestras prendas exclusivas!",
-  "¿Necesitas ayuda para encontrar algo en particular?",
-  "¡Descubre lo último en tendencias de moda!",
-  "¿Has probado nuestro servicio de entrega express?",
+  "¡Gracias por estar aquí!",
+  "Sí, YO TAMBIÉN QUIERO TODOO",
+  "¡La mejor calidad, siempre!",
 ];
 
 function transicionar() {
